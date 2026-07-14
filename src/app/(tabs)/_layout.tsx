@@ -1,8 +1,8 @@
-import { Tabs } from "expo-router";
+import { Tabs } from 'expo-router/js-tabs';
 
-import { MyTabBar } from "@/components/my-tab-bar";
-import { SCREENS } from "@/constants/screens";
-import { TAB_STRINGS } from "@/constants/tab-strings";
+import { MyTabBar } from '@/components/my-tab-bar';
+import { SCREENS } from '@/constants/screens';
+import { TAB_STRINGS } from '@/constants/tab-strings';
 
 export default function TabsLayout() {
   return (

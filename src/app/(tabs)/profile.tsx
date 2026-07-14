@@ -1,7 +1,7 @@
-import { Text, View } from "react-native";
+import { Text, View } from 'react-native';
 
-import { SCREENS } from "@/constants/screens";
-import { TAB_STRINGS } from "@/constants/tab-strings";
+import { SCREENS } from '@/constants/screens';
+import { TAB_STRINGS } from '@/constants/tab-strings';
 
 export default function ProfileScreen() {
   return (

@@ -1,16 +1,18 @@
 {
   "expo": {
     "name": "tikiti-mobile-revamped",
-    "slug": "tikiti-mobile-revamped",
+    "slug": "tikiti-mobile",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "tikitimobilerevamped",
     "userInterfaceStyle": "automatic",
     "ios": {
-      "icon": "./assets/expo.icon"
+      "icon": "./assets/expo.icon",
+      "bundleIdentifier": "com.tikiti.consumer"
     },
     "android": {
+      "package": "com.tikiti.consumer",
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
@@ -39,6 +41,13 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "e635b815-cff8-40b1-b1e8-342cd1a2f770"
+      }
+    },
+    "owner": "yashthakur0619"
   }
 }
