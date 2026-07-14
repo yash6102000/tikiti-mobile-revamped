@@ -1,5 +1,5 @@
 {
-  "name": "tikiti-mobile-revamped",
+  "name": "tikiti-mobile",
   "main": "expo-router/entry",
   "version": "1.0.0",
   "dependencies": {
