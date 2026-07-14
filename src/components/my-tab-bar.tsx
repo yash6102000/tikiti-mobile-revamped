@@ -61,6 +61,9 @@ export function MyTabBar({ state, descriptors, navigation, insets }: BottomTabBa
             layout={LinearTransition}
             key={route.key}
             onPress={onPress}
+            accessibilityRole="button"
+            accessibilityState={isFocused ? { selected: true } : {}}
+            accessibilityLabel={options.tabBarAccessibilityLabel ?? label}
             style={{
               justifyContent: 'center',
               alignItems: 'center',
