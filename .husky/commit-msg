@@ -1,0 +1,16 @@
+#!/bin/sh
+
+echo "Validating commit message..."
+
+commit_regex="^(feat|fix|chore|refactor|docs|test|style|perf|ci|build|revert)(\([a-z0-9_-]*\))?: .+"
+
+if ! grep -qE "$commit_regex" "$1"; then
+  echo "Invalid commit message format."
+  echo ""
+  echo "Example:"
+  echo "  feat: add login api"
+  echo ""
+  exit 1
+fi
+
+echo "Commit message is valid."

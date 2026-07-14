@@ -23,17 +23,34 @@ In the output, you'll find options to open the app in a
 - [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
 - [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+You can start developing by editing the files inside the **src/app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
-## Get a fresh project
+## Deploy with EAS
 
-When you're ready, run:
+The project is linked to [Expo Application Services (EAS)](https://expo.dev/eas) (see `extra.eas.projectId` in `app.json` and the build profiles in `eas.json`).
+
+If you're setting this up on a machine for the first time, log in and confirm the project link:
 
 ```bash
-npm run reset-project
+npx eas-cli login
+npx eas-cli init --id <project-id>
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### EAS Preview build
+
+```bash
+npx eas-cli build --platform android --profile preview
+```
+
+### EAS Production build
+
+```bash
+npx eas-cli build --platform android --profile production
+```
+
+- [EAS Build](https://docs.expo.dev/build/introduction/)
+- [EAS Updates](https://docs.expo.dev/eas-update/introduction/)
+- [EAS Submit](https://docs.expo.dev/submit/introduction/)
 
 ### Other setup steps
 

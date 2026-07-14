@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# Prevent committing .env files (allow .env.example)
+if git diff --cached --name-only | grep -E '(^|/)\.env($|\.)' | grep -vq '\.example$'; then
+  echo ".env files cannot be committed."
+  exit 1
+fi
+
+# Run lint
+npm run lint || exit 1
